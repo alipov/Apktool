@@ -72,7 +72,7 @@ public class BuilderClassPool implements ClassSection<BuilderStringReference, Bu
         BuilderClassDef prev = internedItems.put(classDef.getType(), classDef);
         if (prev != null) {
             // throw new ExceptionWithContext("Class %s has already been interned", classDef.getType());
-            System.out.println(“WARNING!!! Class " + classDef.getType() + " has already been interned");
+            System.out.println("WARNING!!! Class " + classDef.getType() + " has already been interned");
             return prev;
 
         }
