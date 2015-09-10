@@ -76,7 +76,7 @@ public class DexPool extends DexWriter<CharSequence, StringReference, CharSequen
                 annotationPool, annotationSetPool);
     }
 
-    private DexPool(int api, StringPool stringPool, TypePool typePool, ProtoPool protoPool, FieldPool fieldPool,
+    protected DexPool(int api, StringPool stringPool, TypePool typePool, ProtoPool protoPool, FieldPool fieldPool,
                     MethodPool methodPool, ClassPool classPool, TypeListPool typeListPool,
                     AnnotationPool annotationPool, AnnotationSetPool annotationSetPool) {
         super(api, stringPool, typePool, protoPool, fieldPool, methodPool,
